@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey website</title>
     <!-- Tailwind & daisyui -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-manrope{
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto lg:px24">
+    <div class="container mx-auto">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
                 <img class="w-full" src="Images/1.png" alt="">
@@ -41,5 +49,23 @@
             </div>
           </div>
     </div>
+    <hr class="border-dotted">
+
+    <section class="my-20">
+      <h4 class="text-4xl text-black font-bold text-center">Professional Hockeys Club</h4>
+      <p class="text-center mt-5">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play</p>
+
+    </section>
+    <!-- Progress Bar -->
+    <section>
+      <div class="justify-between text-center">
+        <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%
+        </div>
+        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+        <div class="radial-progress text-yellow-300" style="--value:90;" role="progressbar">90%</div>
+        <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+      </div>
+    </section>
+
 </body>
 </html>
